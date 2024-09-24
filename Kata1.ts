@@ -33,7 +33,7 @@ const recentMovies:Movie[] = [
   ];
 
 
-  function filterByTitle (movies:Movie[],searchedTitle :string) {
+  function filterByTitle (movies:Movie[],searchedTitle :string):Movie[] {
 
       const filterMovie = movies.filter((movie)=>movie.title.toLowerCase().includes(searchedTitle.toLowerCase()))
 
